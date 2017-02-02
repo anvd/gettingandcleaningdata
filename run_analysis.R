@@ -105,4 +105,4 @@ tidyData = aggregate(finalDataSetWithoutActivityType[, names(finalDataSetWithout
 tidyData = merge(tidyData, activityTypes, by='activityId', all.x=TRUE)
 
 # Save the tidyData set to file
-write.table(tidyData, './tidyData.txt', row.names=TRUE, sep='\t')
+write.table(tidyData, './tidyData.txt', row.names=FALSE, sep='\t')
